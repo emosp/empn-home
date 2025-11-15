@@ -87,6 +87,7 @@ export const UploadFile = (
           try {
             upload_progress(((i / file_chunks) * 0.8).toFixed())
             await ky.put(upload_url, {
+              timeout: false,
               headers: {
                 'Content-Type': 'application/octet-stream',
                 'Content-Range': `bytes ${chunk_start}-${chunk_end - 1}/${file_total}`,
