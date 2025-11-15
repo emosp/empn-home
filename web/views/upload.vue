@@ -15,9 +15,12 @@
         </n-button>
       </template>
       <template #default>
-        <n-form ref="form_ref" :model="form_data" :rules="form_rules" label-placement="left" :label-width="70">
+        <n-form ref="form_ref" :model="form_data" :rules="form_rules" label-placement="left" :label-width="80">
           <n-form-item label="媒体库" path="library_id">
             <n-select v-model:value="form_data.library_id" placeholder="请选择要上传的媒体库" :options="libraries" label-field="name" value-field="library_id" filterable />
+          </n-form-item>
+          <n-form-item label="匿名上传" path="is_anonymous">
+            <n-switch v-model:value="form_data.is_anonymous"> </n-switch>
           </n-form-item>
 
           <n-form-item label="名称" path="video_title">
@@ -85,6 +88,7 @@
   const form_ref = ref<FormInst | null>(null),
     form_data_default = {
       library_id: null,
+      is_anonymous: false,
       video_title: null,
       video_description: null,
       cover_path: null,
