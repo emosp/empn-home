@@ -1,0 +1,54 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "home",
+  "compatibility_date": "2025-11-15",
+  "main": "server/main.ts",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/server/*"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.8
+  },
+  "routes": [
+    {
+      "pattern": "empn.mon/",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/oauth",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/home",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/upload",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/favicon*",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/robots.txt",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/assets/*",
+      "zone_name": "empn.mon"
+    },
+    {
+      "pattern": "empn.mon/server/*",
+      "zone_name": "empn.mon"
+    }
+  ]
+}
