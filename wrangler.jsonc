@@ -23,18 +23,6 @@
       "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mom/oauth",
-      "zone_name": "empn.mom"
-    },
-    {
-      "pattern": "empn.mom/home",
-      "zone_name": "empn.mom"
-    },
-    {
-      "pattern": "empn.mom/upload",
-      "zone_name": "empn.mom"
-    },
-    {
       "pattern": "empn.mom/favicon*",
       "zone_name": "empn.mom"
     },

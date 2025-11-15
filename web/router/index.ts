@@ -1,4 +1,4 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router'
 import signStore from '@/stores/sign.ts'
 import { nMessage } from '@/utils/naive'
 
@@ -38,7 +38,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 
