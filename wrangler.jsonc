@@ -19,36 +19,36 @@
   },
   "routes": [
     {
-      "pattern": "empn.mon/",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/oauth",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/oauth",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/home",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/home",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/upload",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/upload",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/favicon*",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/favicon*",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/robots.txt",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/robots.txt",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/assets/*",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/assets/*",
+      "zone_name": "empn.mom"
     },
     {
-      "pattern": "empn.mon/server/*",
-      "zone_name": "empn.mon"
+      "pattern": "empn.mom/server/*",
+      "zone_name": "empn.mom"
     }
   ]
 }
